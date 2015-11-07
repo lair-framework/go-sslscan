@@ -49,6 +49,8 @@ type Cipher struct {
 	SSLVersion string `xml:"sslversion,attr"`
 	Bits       int    `xml:"bits,attr"`
 	Cipher     string `xml:"cipher,attr"`
+	Curve      string `xml:"curve,attr"`
+	EcdheBits  int    `xml:"ecdhebits,attr"`
 }
 
 // Certificate contains the certificate parameters.
