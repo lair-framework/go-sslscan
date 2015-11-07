@@ -17,7 +17,7 @@ type SSLScanData struct {
 // SSLTest contains sslscan results.
 type SSLTest struct {
 	Host          string        `xml:"host,attr"`
-	Port          string        `xml:"port,attr"`
+	Port          int           `xml:"port,attr"`
 	Renegotiation Renegotiation `xml:"renegotiation"`
 	Compression   Compression   `xml:"compression"`
 	Heartbleed    []Heartbleed  `xml:"heartbleed"`
